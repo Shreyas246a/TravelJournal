@@ -4,30 +4,31 @@ The Travel Journal App is a web application built using the MERN (MongoDB, Expre
 
 Features
 
-   User Authentication: Secure user registration and login functionality.
+      User Authentication: Secure user registration and login functionality.
 
-   Create Journal Entries: Users can add new travel journal entries with title, description, and images.
+      Create Journal Entries: Users can add new travel journal entries with title, description, and images.
 
-   Edit & Delete Entries: Modify or remove previously created journal entries.
+      Edit & Delete Entries: Modify or remove previously created journal entries.
 
-   View Entries: Browse through all journal entries in a structured format.
+      View Entries: Browse through all journal entries in a structured format.
 
-   Responsive Design: Optimized for various screen sizes and devices.
+      Responsive Design: Optimized for various screen sizes and devices.
 
 Tech Stack
+      
+      Frontend: React, Tailwind CSS
 
-  Frontend: React, Tailwind CSS
+      Backend: Node.js, Express.js
 
-  Backend: Node.js, Express.js
+      Database:  MongoDB
 
-  Database:  MongoDB
-
-  Authentication: JWT-based authentication
+      Authentication: JWT-based authentication
 
 Installation & Setup
 
   Prerequisites
+   
+      Node.js and npm installed
 
-   Node.js and npm installed
-
-   mongoDB running locally or a cloud database (e.g., MongoDB Atlas)
+      mongoDB running locally or a cloud database (e.g., MongoDB Atlas)
+   
