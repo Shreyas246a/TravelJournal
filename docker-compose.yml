@@ -1,0 +1,33 @@
+version : '3.8'
+
+services:
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    networks:
+      - my_network
+  server:
+    build: ./server
+    ports:
+      - "5500:5500"
+    networks:
+      - my_network
+    depends_on:
+      - mongo
+    environment:
+      - MONGOURI = ${MONGOURI}
+  mongo:
+    image: mongo:4.4.18
+    ports:
+      - "27107:27107"
+    networks:
+      - my_network
+    volumes:
+      - /data/dbdata
+    restart: always
+    command: ['mongod','--bind_ip_all']
+
+networks:
+  my_network:
+    driver: bridge
